@@ -1,5 +1,5 @@
 FROM tomcat:8-jre8-alpine
-COPY ./envoy.yaml /tmpl/envoy.yaml.tmpl
+COPY WebContent/Config.properties /tmpl/Config.properties.tmpl
 COPY docker-entrypoint.sh /
 RUN chmod 500 /docker-entrypoint.sh
 EXPOSE 8080
